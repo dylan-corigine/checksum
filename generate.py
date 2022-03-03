@@ -27,8 +27,8 @@ def calc_header(checksum, packet):
     # 0x0000 (2 bytes) to 0xffff(2 bytes) and then assign these header
     # fields the corresponding values.
     
-    # For example if i= 0x00ff we would have version=0, 
-    # ihl = 0 and tos = 0xff
+    # For example if i= 0xeaff we would have version=0xe, 
+    # ihl = 0xa and tos = 0xff
     
     for i in range(0xffff):
         # 2 bytes = 16 bits
